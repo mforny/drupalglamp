@@ -1,0 +1,124 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.beanstalk_hero_00_480px
+    - image.style.beanstalk_hero_01_720px
+    - image.style.beanstalk_hero_02_768px
+    - image.style.beanstalk_hero_03_960px
+    - image.style.beanstalk_hero_04_1024px
+    - image.style.beanstalk_hero_05_1152px
+    - image.style.beanstalk_hero_06_1280px
+    - image.style.beanstalk_hero_07_1440px
+    - image.style.beanstalk_hero_08_1536px
+    - image.style.beanstalk_hero_09_1920px
+    - image.style.beanstalk_hero_10_2048px
+    - image.style.beanstalk_hero_11_2560px
+    - image.style.beanstalk_hero_12_3840px
+    - image.style.beanstalk_hero_13_4096px
+    - image.style.beanstalk_hero_14_5120px
+id: beanstalk_hero
+label: 'Beanstalk Hero Responsive'
+image_style_mappings:
+  -
+    breakpoint_id: beanstalk.default.4k
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_13_4096px
+  -
+    breakpoint_id: beanstalk.default.ultra_wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_11_2560px
+  -
+    breakpoint_id: beanstalk.default.ultra_wide
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_14_5120px
+  -
+    breakpoint_id: beanstalk.default.wide
+    multiplier: 1.5x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_09_1920px
+  -
+    breakpoint_id: beanstalk.default.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_11_2560px
+  -
+    breakpoint_id: beanstalk.default.wide
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_12_3840px
+  -
+    breakpoint_id: beanstalk.default.normal
+    multiplier: 1.5x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_09_1920px
+  -
+    breakpoint_id: beanstalk.default.normal
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_06_1280px
+  -
+    breakpoint_id: beanstalk.default.normal
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_11_2560px
+  -
+    breakpoint_id: beanstalk.default.narrow
+    multiplier: 1.5x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_08_1536px
+  -
+    breakpoint_id: beanstalk.default.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_04_1024px
+  -
+    breakpoint_id: beanstalk.default.narrow
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_10_2048px
+  -
+    breakpoint_id: beanstalk.default.mobile_landscape
+    multiplier: 1.5x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_05_1152px
+  -
+    breakpoint_id: beanstalk.default.mobile_landscape
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_02_768px
+  -
+    breakpoint_id: beanstalk.default.mobile_landscape
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_08_1536px
+  -
+    breakpoint_id: beanstalk.default.mobile_portrait
+    multiplier: 1.5x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_01_720px
+  -
+    breakpoint_id: beanstalk.default.mobile_portrait
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_00_480px
+  -
+    breakpoint_id: beanstalk.default.mobile_portrait
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_03_960px
+  -
+    breakpoint_id: beanstalk.default.mobile_portrait
+    multiplier: 3x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_07_1440px
+  -
+    breakpoint_id: beanstalk.default.all
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: beanstalk_hero_00_480px
+breakpoint_group: beanstalk.default
+fallback_image_style: beanstalk_hero_00_480px

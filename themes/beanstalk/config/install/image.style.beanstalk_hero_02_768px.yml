@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_02_768px
+label: 'Beanstalk Hero.02: 768px'
+effects:
+  c409f158-fccb-4540-a6d7-ad62ac2b26df:
+    uuid: c409f158-fccb-4540-a6d7-ad62ac2b26df
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

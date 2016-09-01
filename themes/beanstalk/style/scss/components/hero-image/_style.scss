@@ -1,0 +1,89 @@
+#hero-outer-wrapper {
+  .view-hero-area{
+    padding-bottom: 20px;
+    .view-content{
+      position: relative;
+    }
+  }
+  #hero-layout {
+
+    line-height: 0px;
+
+
+    .views-field-field-image {
+
+    }
+    //System Logo
+    .views-field-field-icon-main{
+      position: absolute;
+      left: 1vw;
+      bottom: 1vw;
+      img {
+        height: auto;
+        width: 20vw;
+        max-width: 300px;
+      }
+    }
+    //Services Logo
+    .views-field-field-icon-main-1 {
+      position: absolute;
+      left: 1vw;
+      bottom: 1vw;
+      img {
+        height: auto ;
+        width: 8vw;
+        max-width: 80px;
+      }
+    }
+    //Ultraflow Icon
+    .views-field-field-image-1 {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      width: 8vw;
+      max-width: 60px;
+    }
+  }
+}
+
+//Mobile portrait
+@include breakpoint($mobilePortrait){
+  #hero-outer-wrapper {
+    .view-hero-area {
+      padding-bottom: 25px;
+    }
+  }
+}
+//Mobile Landscape
+@include breakpoint($mobileLandscape){
+  #hero-outer-wrapper {
+    .view-hero-area {
+      padding-bottom: 40px;
+    }
+  }
+}
+//Tablet
+@include breakpoint($tablet){
+  #hero-outer-wrapper {
+    .view-hero-area {
+      padding-bottom: 40px;
+    }
+  }
+}
+//Desktop
+@include breakpoint($desktop){
+  #hero-outer-wrapper {
+    .view-hero-area {
+      padding-bottom: 45px;
+    }
+  }
+}
+//Widescreen
+@include breakpoint($desktopWide){
+  #hero-outer-wrapper {
+    .view-hero-area {
+      padding-bottom: 45px;
+    }
+  }
+}

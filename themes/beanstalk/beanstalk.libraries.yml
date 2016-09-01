@@ -1,0 +1,43 @@
+global-styling:
+  version: VERSION
+  js:
+    js/js_min/beanstalk.js: {}
+  css:
+    theme:
+      style/css/styles.css: {}
+    layout: 
+      #style/css/layout/some-layout-file.css: {}
+    component:
+      #style/css/components/some-component.css: {}
+  dependencies:
+    - core/jquery
+    
+front-layout:
+  version: VERSION
+  js:
+    js/js_min/front.js: {}
+  css:
+    theme:
+       style/css/beanstalk.css: {}
+    layout:
+      style/css/layouts/front.css: {}
+    component:
+      #style/css/components/some-component.css: {}
+  dependencies:
+    - core/jquery
+
+tile-display:
+  title: 'Sideways scrolling'
+  description: 'Sideways scrolling.'
+  version: VERSION
+  js:
+    js/libraries/jquery.mousewheel.js:
+    #js/libraries/jquery.touchSwipe.js:
+    #js/libraries/jquery.horizonScroll.js:
+    js/tile-display.js:
+  css:
+      theme:
+      layout:
+        style/css/layout/tile-display.css: {}
+  dependencies:
+    - core/jquery

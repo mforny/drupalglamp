@@ -1,0 +1,13 @@
+
+//Footer Region
+#page-wrapper::after{
+  line-height: 0px;
+}
+#content-outer-wrapper::after{
+  line-height: 0px;
+}
+#footer-outer-wrapper {
+  background: $footerColor;
+  padding: 10px;
+
+}

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_12_3840px
+label: 'Beanstalk Hero.12: 3840px'
+effects:
+  234b133d-d7fd-472d-b660-d2648b83e686:
+    uuid: 234b133d-d7fd-472d-b660-d2648b83e686
+    id: image_scale
+    weight: 1
+    data:
+      width: 3840
+      height: null
+      upscale: false

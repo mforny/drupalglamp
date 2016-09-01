@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_08_1536px
+label: 'Beanstalk Hero.08: 1536px'
+effects:
+  f13dd241-4302-43b5-be70-2a70976cb85f:
+    uuid: f13dd241-4302-43b5-be70-2a70976cb85f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false

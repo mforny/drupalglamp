@@ -1,0 +1,174 @@
+@mixin equalHeightTile($tiles, $titleHeight: 80px, $areaPadding: 20px, $tilePadding: 2% ) {
+
+  .view-content {
+    position: absolute;
+    left: $areaPadding;
+    right: $areaPadding;
+    top: $titleHeight;
+    bottom: $areaPadding;
+    .views-row {
+      position: absolute;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    $height: (100% - (($tiles - 1) * $tilePadding) ) / $tiles;
+
+    @for $n from 1 through $tiles {
+      .views-row:nth-child(#{$n}) {
+        left: 0;
+        right: 0;
+        top: ($height + $tilePadding) * ($n - 1);
+        bottom: ($height + $tilePadding) * ($tiles - $n);
+      }
+    }
+  }
+}
+
+@mixin equalHeightColumn2($c1: 6, $c2: 6, $columnPadding: 2%, $height: 70%) {
+  $columns: 12;
+  $regions: 2;
+  $singleColumnWidth: (100% - (($regions + 1) * $columnPadding)) / $columns;
+  $heightPadding: $columnPadding * 0.1;
+  &>div {
+    position: absolute;
+    .view{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  &>div:nth-child(1){
+    top: 0;
+    bottom: 100% - $height;
+    left: $columnPadding;
+    width: $singleColumnWidth * $c1;
+  }
+  &>div:nth-child(2){
+    top: 0;
+    bottom: 100% - $height;
+    left: ($columnPadding * 2) + ($singleColumnWidth * $c1);
+    width: $singleColumnWidth * $c2;
+  }
+  &>div:nth-child(3){
+    top: $height + $heightPadding;
+    bottom: 0;
+    left: $columnPadding;
+    right: $columnPadding;
+  }
+
+}
+
+/*
+@mixin equalHeightColumn3($c1, $c2, $c3, $columnPadding: 2%, $height: 100%) {
+  $columns: 12;
+  $regions: 3;
+  $singleColumnWidth: (100% - (($regions + 1) * $columnPadding)) / $columns;
+
+  &>div {
+    position: absolute;
+    top: 0;
+    bottom: 100% - $height;
+    .view{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  &>div:nth-child(1){
+    left: $columnPadding;
+    width: $singleColumnWidth * $c1;
+  }
+  &>div:nth-child(2){
+    left: ($columnPadding * 2) + ($singleColumnWidth * $c1);
+    width: $singleColumnWidth * $c2;
+  }
+  &>div:nth-child(3){
+    left: ($columnPadding * 3) + ($singleColumnWidth * ($c1 + $c2));
+    width: $singleColumnWidth * $c3;
+  }
+
+}
+*/
+
+@mixin equalHeightColumnX($regionName, $position, $regionColumns, $start ,$totalRegions: 3, $columnPadding: 2%, $height: 100%) {
+
+
+  .#{$regionName}{
+    $totalColumns: 12;
+    $totalPadding:  ($totalRegions + 1) * $columnPadding;
+    $singleColumnWidth: (100% - $totalPadding) / $totalColumns;
+    position: absolute;
+    left: ($columnPadding * $position) + ($singleColumnWidth * ($start - 1));
+    width: $singleColumnWidth * $regionColumns;
+    top: 0;
+    bottom: 100% - $height;
+  }
+
+
+}
+
+
+
+
+
+@mixin equalHeightSquare($padding: 80px){
+  .view-content {
+    position: absolute;
+    left: $areaPadding;
+    right: $areaPadding;
+    top: $padding;
+    bottom: $areaPadding;
+    .views-row {
+      position: absolute;
+      width: (100% - ($tilePadding * $widthHeightRatio) )/ 2 ;
+      height: (100% - $tilePadding) / 2 ;
+      overflow: hidden;
+      margin: 0;
+
+    }
+    .views-row:nth-child(1) {
+      left: 0;
+      top: 0;
+    }
+    .views-row:nth-child(2) {
+      right: 0;
+      top: 0;
+    }
+    .views-row:nth-child(3) {
+      left: 0;
+      //top: 100% - $systemTile;
+      bottom: 0;
+    }
+    .views-row:nth-child(4) {
+      right: 0;
+      //top: 100% - $systemTile;
+      bottom: 0;
+    }
+  }
+}
+
+@mixin equalHeightRow($tiles){
+  .view-content {
+    position: absolute;
+    top: $titlePaddingDesk;
+    bottom: $areaPadding;
+    left: $areaPadding;
+    right: $areaPadding;
+    $width: (100% -(($tiles - 1) * $tilePadding)) / $tiles;
+    @for $n from 1 through $tiles {
+      .views-row:nth-child(#{$n}) {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        width: $width;
+        left: ($tilePadding + $width) * ($n - 1);
+      }
+    }
+  }
+}

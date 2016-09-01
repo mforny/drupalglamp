@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_13_4096px
+label: 'Beanstalk Hero.13: 4096px'
+effects:
+  68bd9ca4-826f-4fca-99e7-674fdb161a86:
+    uuid: 68bd9ca4-826f-4fca-99e7-674fdb161a86
+    id: image_scale
+    weight: 1
+    data:
+      width: 4096
+      height: null
+      upscale: false

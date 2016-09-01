@@ -1,0 +1,45 @@
+$timing: 0.5s;
+
+.color-main-1{
+  background: $colorMain1;
+  transition: background $timing ease-in-out;
+}
+.color-main-2{
+  background: $colorMain2;
+  transition: background $timing ease-in-out;
+}
+.color-main-3{
+  background: $colorMain3;
+  transition: background $timing ease-in-out;
+}
+.color-main-4{
+  background: $colorMain4;
+  transition: background $timing ease-in-out;
+}
+.color-main-5{
+  background: $colorMain5;
+  transition: background $timing ease-in-out;
+}
+
+
+//Hover effect
+.color-main-1:hover{
+  background: $colorMainFade1;
+  transition: background $timing ease-in-out;
+}
+.color-main-2:hover{
+  background: $colorMainFade2;
+  transition: background $timing ease-in-out;
+}
+.color-main-3:hover{
+  background: $colorMainFade3;
+  transition: background $timing ease-in-out;
+}
+.color-main-4:hover{
+  background: $colorMainFade4;
+  transition: background $timing ease-in-out;
+}
+.color-main-5:hover{
+  background: $colorMainFade5;
+  transition: background $timing ease-in-out;
+}

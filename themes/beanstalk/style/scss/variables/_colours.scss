@@ -1,0 +1,53 @@
+//Define main colours here
+$c1: #21c4f3;
+$c2: #fcaf17;
+$c3: #32dac4;
+$c4: #bcd853;
+$c5: #231f20;
+//Define greys here
+$cLG: #f4f4f4;
+$cMG: #d4d4d4;
+$cDG: #c4c4c4;
+//Define Black and White
+$cB: #000000;
+$cW: #ffffff;
+
+//Colours converted to rgba
+//Use these variables to define colours throughout site
+$colorMain1: rgba($c1, 1);
+$colorMain2: rgba($c2, 1);
+$colorMain3: rgba($c3, 1);
+$colorMain4: rgba($c4, 1);
+$colorMain5: rgba($c5, 1);
+$colorLightGrey: rgba($cLG, 1);
+$colorMediumGrey: rgba($cMG, 1);
+$colorDarkGrey: rgba($cDG, 1);
+$colorBlack: rgba($cB, 1);
+$colorWhite: rgba($cW, 1);
+
+//Faded out version of colours using alpha transparancy
+$fade: 0.3;
+$colorMainFade1: rgba($c1, $fade);
+$colorMainFade2: rgba($c2, $fade);
+$colorMainFade3: rgba($c3, $fade);
+$colorMainFade4: rgba($c4, $fade);
+$colorMainFade5: rgba($c5, $fade);
+
+//Standard fonts
+$headingsColor: $colorBlack;
+$textColor: $colorBlack;
+$linkColor: $colorMain3;
+$linkHoverColor: $colorMain4;
+
+//Region background colours
+$headerColour: $colorLightGrey;
+$bodyColor: $colorWhite;
+$footerColor: $colorLightGrey;
+
+//Menu
+$menuColor: $colorDarkGrey;
+$menuTextColor: $colorWhite;
+
+// Mobile Menu
+$menuMobileColor: $colorDarkGrey;
+$menuTextMobileColor: $colorWhite;

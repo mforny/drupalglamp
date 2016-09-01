@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_10_2048px
+label: 'Beanstalk Hero.10: 2048px'
+effects:
+  1e7348f5-685c-4d88-834a-35157931d054:
+    uuid: 1e7348f5-685c-4d88-834a-35157931d054
+    id: image_scale
+    weight: 1
+    data:
+      width: 2048
+      height: null
+      upscale: false

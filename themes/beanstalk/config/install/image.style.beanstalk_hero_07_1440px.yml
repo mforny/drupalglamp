@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_07_1440px
+label: 'Beanstalk Hero.07: 1440px'
+effects:
+  db48a2ea-f9bd-473a-a6fc-42d7f1fc4933:
+    uuid: db48a2ea-f9bd-473a-a6fc-42d7f1fc4933
+    id: image_scale
+    weight: 1
+    data:
+      width: 1440
+      height: null
+      upscale: false

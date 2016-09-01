@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_09_1920px
+label: 'Beanstalk Hero.09: 1920px'
+effects:
+  4e13d8d5-a6f1-45f4-a352-73a1d3d32899:
+    uuid: 4e13d8d5-a6f1-45f4-a352-73a1d3d32899
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

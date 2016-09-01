@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_00_480px
+label: 'Beanstalk Hero.00: 480px'
+effects:
+  df18f1f9-3320-4c1b-8a9e-a2e639f33a8d:
+    uuid: df18f1f9-3320-4c1b-8a9e-a2e639f33a8d
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false

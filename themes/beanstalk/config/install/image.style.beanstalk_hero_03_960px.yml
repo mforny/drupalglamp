@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_03_960px
+label: 'Beanstalk Hero.03: 960px'
+effects:
+  bfca7c3e-255a-48a5-8a4b-eb5374ad90f9:
+    uuid: bfca7c3e-255a-48a5-8a4b-eb5374ad90f9
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: null
+      upscale: false

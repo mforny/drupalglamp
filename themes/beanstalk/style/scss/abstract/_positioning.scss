@@ -1,0 +1,62 @@
+.two{
+  &.left{}
+  &.right{}
+}
+.three{
+  &.left{}
+  &.centre{}
+  &.right{}
+}
+.hide-display{
+  display: none;
+}
+.without-image{
+  //display: none;
+}
+
+//Tablet
+@include breakpoint($tablet){
+  @include add-gutter(1);
+  .with-image{
+    .views-field-body{
+      @include grid-span(6,1);
+    }
+    .views-field-field-body-image{
+      @include grid-span(6,7);
+    }
+
+  }
+  .two{
+    &.left{
+      @include grid-span(6,1);
+    }
+    &.right{
+      @include grid-span(6,7);
+    }
+  }
+  .three{
+    &.left{
+      @include grid-span(4,1);
+    }
+    &.centre{
+      @include grid-span(4,5);
+    }
+    &.right{
+      @include grid-span(4,9);
+    }
+  }
+}
+//Desktop
+@include breakpoint($desktop){}
+//Widescreen
+@include breakpoint($desktopWide){
+  .with-image{
+    .views-field-body{
+      @include grid-span(5,1);
+    }
+    .views-field-field-body-image{
+      @include grid-span(5,8);
+    }
+
+  }
+}

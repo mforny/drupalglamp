@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: beanstalk_hero_11_2560px
+label: 'Beanstalk Hero.11: 2560px'
+effects:
+  1dbb9a98-cb54-43b2-884f-cc9f8e8d74d5:
+    uuid: 1dbb9a98-cb54-43b2-884f-cc9f8e8d74d5
+    id: image_scale
+    weight: 1
+    data:
+      width: 2560
+      height: null
+      upscale: false
