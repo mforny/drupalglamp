@@ -16,9 +16,9 @@ function beanstalk_preprocess_html(array &$variables) {
   /*if (isset($variables['head_title_array']['title']) && isset($variables['head_title_array']['name']) && ($variables['head_title_array']['title'] == $variables['head_title_array']['name'])) {
     $variables['head_title'] = $variables['head_title_array']['name'];
   }*/
-  if ($node = \Drupal::request()->attributes->get('node')) {
+  /*if ($node = \Drupal::request()->attributes->get('node')) {
     $variables['attributes']['class'][] = 'page-node-' . $node->id();
-  }
+  }*/
 }
 
 /**
@@ -48,7 +48,10 @@ function beanstalk_preprocess_page(array &$variables) {
  * Implements hook_theme_suggestions_page_alter().
  */
 function beanstalk_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__'.$content_type;
+  }
 }
 
 /**
@@ -60,6 +63,7 @@ function beanstalk_theme_suggestions_node_alter(array &$suggestions, array $vari
   if ($variables['elements']['#view_mode'] == "full") {
 
   }*/
+
 }
 
 /**

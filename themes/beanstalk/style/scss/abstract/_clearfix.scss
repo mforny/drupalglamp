@@ -1,80 +1,9 @@
-///Header Region
-#header-outer-wrapper{
-  #header-layout {
-    .logo {}
-    .menu--main {}
-    .menu--contact-us {}
-    .mobile-menu{
-      .menu-button{}
-    }
-    .menu--main-menu-mobile {}
-  }
+header{
+  @include clearfix;
 }
-//Hero Region
-#hero-outer-wrapper{
-  #hero-layout{
-    .region--hero{}
-    .region--messages{}
-  }
+main{
+  @include clearfix;
 }
-//Content Region
-#content-outer-wrapper{
-  #main-layout{
-    .region--content-header{}
-    .region--content{
-      .views-row {
-        @include clearfix;
-      }
-      .frontpage-system{
-
-
-      }
-
-    }
-    .region--content-image{
-      .view-what-we-do-system {
-        @include clearfix;
-      }
-      .view-what-we-do-services {
-        @include clearfix;
-      }
-      .view-what-we-do-projects {
-        @include clearfix;
-      }
-    }
-    .region--content-second{
-
-      .views-row {
-        @include clearfix;
-      }
-
-
-
-
-    }
-    .region--content-third{
-      .views-row {
-        @include clearfix;
-      }
-
-    }
-    .region--content-forth{
-
-      .views-row {
-        @include clearfix;
-      }
-    }
-    .region--contact-bar{}
-  }
-}
-//Footer Region
-#footer-outer-wrapper {
-  #footer-layout {
-    .region--footer {
-      .menu--footer-systems {}
-      .menu--footer-services {}
-      .menu--footer-resources {}
-      .menu--footer-ultraflow {}
-    }
-  }
+footer{
+  @include clearfix;
 }

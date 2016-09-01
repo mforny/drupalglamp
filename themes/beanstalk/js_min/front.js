@@ -1,1 +1,0 @@
-!function(d){d(document).ready(function(){d("body").addClass("document-ready-front")})}(jQuery);

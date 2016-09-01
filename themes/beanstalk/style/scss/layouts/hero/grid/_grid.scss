@@ -1,0 +1,35 @@
+body {
+  //Mobile portrait
+  @include breakpoint($mobilePortrait) {
+
+  }
+  //Mobile Landscape
+  @include breakpoint($mobileLandscape) {
+
+  }
+  //Tablet
+  @include breakpoint($tablet) {
+
+  }
+  //Desktop & Tanlet Landsacpe
+  @include breakpoint($desktop) {
+    .field--name-body {
+      @include grid-span(6, 1);
+    }
+    .field--name-field-body-image {
+      @include grid-span(6, 7);
+    }
+  }
+  //Widescreen
+  @include breakpoint($desktopWide) {
+
+  }
+  //Ultra Widescreen
+  @include breakpoint($desktopUltraWide) {
+
+  }
+  //4K Display
+  @include breakpoint($desktop4k) {
+
+  }
+}

@@ -33,11 +33,11 @@ gulp.task('clearcache', shell.task([
 gulp.task('browser-sync', function() {
     browserSync.init({
         injectChanges: true,
-        proxy: "local.digitalbeanstalk.com.au"
+        proxy: "local.drupalglamp.com.au"
     });
     gulp.watch("style/scss/**/*.scss", ['sass']);
     gulp.watch("style/css/**/*.css").on('change', browserSync.reload);
-    gulp.watch("style/js/**/*.js", ['uglify']).on('change', browserSync.reload);
+    gulp.watch("js/*", ['uglify']).on('change', browserSync.reload);
     gulp.watch('*.theme', ['clearcache']).on('change', browserSync.reload);
     gulp.watch('*.yml', ['clearcache']).on('change', browserSync.reload);
     gulp.watch('templates/**/*', ['clearcache']).on('change', browserSync.reload);

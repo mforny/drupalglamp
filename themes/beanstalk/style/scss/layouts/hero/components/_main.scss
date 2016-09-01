@@ -1,0 +1,8 @@
+main {
+
+  .region-content {
+    padding: $pagePaddingDesktop;
+    @include clearfix;
+  }
+
+}

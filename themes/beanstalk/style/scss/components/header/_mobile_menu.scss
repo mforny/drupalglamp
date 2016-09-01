@@ -1,10 +1,10 @@
 //Mobile Size
 
-$width: $menu-height-mobile;
-$square: $menu-height-mobile - (2 * $borderMobile);
+$width: $menuHeightMobile;
+$square: $menuHeightMobile - (2 * $borderMobile);
 
 #header-outer-wrapper {
-  height: $menu-height-mobile;
+  height: $menuHeightMobile;
   #header-layout {
     position: relative;
     .menu--main {
@@ -14,8 +14,8 @@ $square: $menu-height-mobile - (2 * $borderMobile);
       display: none;
     }
     .mobile-menu {
-      width: $menu-height-mobile;
-      height: $menu-height-mobile;
+      width: $menuHeightMobile;
+      height: $menuHeightMobile;
       display: block;
       p {
         text-align: center;
@@ -42,7 +42,7 @@ $square: $menu-height-mobile - (2 * $borderMobile);
       .menu--main-menu-mobile {
 
         position: absolute;
-        top: $menu-height-mobile;
+        top: $menuHeightMobile;
         left: 0;
         width: 100%;
         display: block;

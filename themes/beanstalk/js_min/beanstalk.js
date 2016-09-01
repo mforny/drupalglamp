@@ -1,1 +1,0 @@
-!function(e){function n(){e(".region-header").hasClass("open")?(e(".region-header").addClass("closed"),e(".region-header").removeClass("open")):(e(".region-header").addClass("open"),e(".region-header").removeClass("closed"))}e(document).ready(function(){e("body").addClass("document-ready")}),e(".matty-menu").click(function(){n()})}(jQuery);

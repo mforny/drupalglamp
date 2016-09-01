@@ -1,22 +1,5 @@
 langcode: en
 status: true
-dependencies:
-  config:
-    - image.style.beanstalk_hero_00_480px
-    - image.style.beanstalk_hero_01_720px
-    - image.style.beanstalk_hero_02_768px
-    - image.style.beanstalk_hero_03_960px
-    - image.style.beanstalk_hero_04_1024px
-    - image.style.beanstalk_hero_05_1152px
-    - image.style.beanstalk_hero_06_1280px
-    - image.style.beanstalk_hero_07_1440px
-    - image.style.beanstalk_hero_08_1536px
-    - image.style.beanstalk_hero_09_1920px
-    - image.style.beanstalk_hero_10_2048px
-    - image.style.beanstalk_hero_11_2560px
-    - image.style.beanstalk_hero_12_3840px
-    - image.style.beanstalk_hero_13_4096px
-    - image.style.beanstalk_hero_14_5120px
 id: beanstalk_hero
 label: 'Beanstalk Hero Responsive'
 image_style_mappings:

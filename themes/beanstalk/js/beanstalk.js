@@ -6,7 +6,7 @@
 
     $(document).ready(function () {
         $('body').addClass("document-ready");
-
+        $('.region-header').addClass("closed");
     });
 
 //Menu function
@@ -22,7 +22,7 @@
 
     };
 
-    $('.matty-menu').click( function() {mattyMenu() });
+    $('.mobile-menu').click( function() {mattyMenu() });
 
 
 })(jQuery);

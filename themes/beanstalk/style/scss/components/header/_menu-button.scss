@@ -1,0 +1,60 @@
+.region-header {
+  .menu-button {
+    $line: $menuButtonLine;
+    $spacer: $menuButtonSpacing;
+    $margin: (($menuHeightMobile - $menuButtonSize) / 2) - $line;
+    top: $margin;
+    right: $margin;
+    height: $menuButtonSize;
+    width: $menuButtonSize;
+    border: $line solid $menuButtonColour;
+    position: absolute;
+    &:hover {
+      cursor: pointer;
+    }
+    .line {
+      position: absolute;
+      width: $menuButtonSize - ($spacer * 2);
+      height: $line;
+      background: $menuButtonColour;
+    }
+    .top-line {
+      top: ($menuButtonSize * 0.25) - (1.5 * $line);
+      left: $spacer;
+    }
+    .middle-line {
+      top: ($menuButtonSize * 0.5)- (1.5 *$line);
+      left: $spacer;
+    }
+    .bottom-line {
+      top: ($menuButtonSize * 0.75)- (1.5 *$line);
+      left: $spacer;
+    }
+  }
+  &.open {
+    .menu-button {
+      .top-line {
+        top: ($menuButtonSize * 0.5) - (1.5 * $line);
+        left: $spacer;
+        transform: rotate(45deg);
+        transition: transform 1s;
+      }
+      .middle-line {
+        display: none;
+      }
+      .bottom-line {
+        top: ($menuButtonSize * 0.5)- (1.5 *$line);
+        left: $spacer;
+        transform: rotate(-45deg);
+        transition: transform 1s;
+      }
+    }
+
+  }
+  &.closed {
+    .menu-button {
+
+    }
+
+  }
+}
