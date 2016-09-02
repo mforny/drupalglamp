@@ -1,8 +1,48 @@
-main {
 
-  .region-content {
-    padding: $pagePaddingDesktop;
-    @include clearfix;
+body {
+  .layout-hero{
+    margin-top: $menuHeightMobile;
   }
 
+  .region-content {
+    padding: $pagePaddingMobile;
+
+  }
+  //Mobile portrait
+  @include breakpoint($mobilePortrait) {
+
+  }
+  //Mobile Landscape
+  @include breakpoint($mobileLandscape) {
+
+  }
+  //Tablet
+  @include breakpoint($tablet) {
+    .layout-hero{
+      margin-top: 0;
+    }
+    .region-content {
+      padding: $pagePaddingTablet;
+
+    }
+  }
+  //Desktop & Tanlet Landsacpe
+  @include breakpoint($desktop) {
+    .region-content {
+      padding: $pagePaddingDesktop;
+      @include clearfix;
+    }
+  }
+  //Widescreen
+  @include breakpoint($desktopWide) {
+
+  }
+  //Ultra Widescreen
+  @include breakpoint($desktopUltraWide) {
+
+  }
+  //4K Display
+  @include breakpoint($desktop4k) {
+
+  }
 }

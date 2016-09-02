@@ -1,0 +1,45 @@
+  .region-header {
+    #block-mobilemenubutton {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 50;
+    }
+    // Below Tablet (Mobile Menu)
+    @include breakpoint(0px ($tablet - 1px)) {
+      &.closed {
+        height: auto;
+        max-height: $menuHeightMobile;
+        transition: all $timing ease-in-out;
+      }
+      &.open {
+        max-height: 500px;
+        height: auto;
+        transition: all $timing ease-in-out;
+      }
+
+      background: $menuMobileColor;
+      height: auto;
+      max-height: $menuHeightMobile;
+      position: absolute;
+      width: 100%;
+      z-index: 200;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li {
+          padding: 0;
+          display: block;
+          height: auto;
+          a {
+            color: $menuTextColor;
+            //padding: 10px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }

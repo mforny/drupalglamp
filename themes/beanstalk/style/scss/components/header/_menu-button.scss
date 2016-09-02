@@ -19,15 +19,15 @@
       background: $menuButtonColour;
     }
     .top-line {
-      top: ($menuButtonSize * 0.25) - (1.5 * $line);
+      top: ($menuButtonSize * 0.25)- ($line);
       left: $spacer;
     }
     .middle-line {
-      top: ($menuButtonSize * 0.5)- (1.5 *$line);
+      top: ($menuButtonSize * 0.5)- ($line);
       left: $spacer;
     }
     .bottom-line {
-      top: ($menuButtonSize * 0.75)- (1.5 *$line);
+      top: ($menuButtonSize * 0.75)- ($line);
       left: $spacer;
     }
   }
@@ -37,7 +37,7 @@
         top: ($menuButtonSize * 0.5) - (1.5 * $line);
         left: $spacer;
         transform: rotate(45deg);
-        transition: transform 1s;
+        transition: transform $timing;
       }
       .middle-line {
         display: none;
@@ -46,7 +46,7 @@
         top: ($menuButtonSize * 0.5)- (1.5 *$line);
         left: $spacer;
         transform: rotate(-45deg);
-        transition: transform 1s;
+        transition: transform $timing;
       }
     }
 

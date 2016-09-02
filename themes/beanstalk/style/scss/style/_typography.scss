@@ -13,7 +13,10 @@ body {
 p {
   color: $textColor;
   text-align: left;
-  font-size: 14px;
+  font-size: ms(0);  //modular scale
+  &:first-child{
+    margin-top: 0;
+  }
 }
 
 a {
@@ -38,7 +41,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: ms(5);
+  line-height:  ms(5) * 1.2;
   margin-top: 14px;
   margin-bottom: 14px;
 
@@ -46,26 +50,33 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: ms(4);
+  line-height:  ms(4) * 1.2;
   margin-top: 12px;
   margin-bottom: 16px;
 
 }
 
 h3 {
-  font-size: 16px;
+  font-size: ms(3);
+  line-height:  ms(3) * 1.2;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 h4 {
-
+  font-size: ms(2);
+  line-height:  ms(2) * 1.2;
 }
 
 h5 {
-
+  font-size: ms(1);
+  line-height:  ms(1) * 1.2;
 }
 
 h6 {
-
+  font-size: ms(0);
+  line-height:  ms(0) * 1.2;
 }
 
 details {
@@ -86,6 +97,7 @@ ul {
 
   li {
     text-align: center;
+    text-transform: uppercase;
   }
 }
 

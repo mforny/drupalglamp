@@ -46,9 +46,11 @@ $footerColor: $colorLightGrey;
 
 //Menu
 $menuColor: $colorDarkGrey;
-$menuTextColor: $colorWhite;
+$menuTextColor: $colorBlack;
+$menuTextHoverColor: $colorMain2;
+$menuTextActiveColor: $colorMain1;
 
 // Mobile Menu
 $menuMobileColor: $colorDarkGrey;
 $menuTextMobileColor: $colorWhite;
-$menuButtonColour: $colorDarkGrey;
+$menuButtonColour: $colorWhite;

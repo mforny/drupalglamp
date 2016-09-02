@@ -1,0 +1,21 @@
+
+  body.page-node-3{
+    .node__content{
+      display: flex;
+      div:nth-child(1){
+        flex: 1;
+      }
+      div:nth-child(2){
+        flex: 2;
+        position: relative;
+        background: $colorLightGrey;
+      }
+      img{
+        width: 50%;
+        height: auto;
+        //margin: 0 auto;
+        //display: block;
+        @include centerer;
+      }
+    }
+  }

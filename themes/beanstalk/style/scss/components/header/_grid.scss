@@ -1,22 +1,15 @@
-header {
-  //Mobile portrait
-  @include breakpoint($mobilePortrait) {
+.region-header {
 
-  }
-  //Mobile Landscape
-  @include breakpoint($mobileLandscape) {
-
-  }
   //Tablet
   @include breakpoint($tablet) {
-
-    #block-beanstalk-branding {
+    @include add-gutter(0);
+    .block-system-branding-block {
       @include grid-span(3, 1);
     }
-    #block-beanstalk-main-menu {
+    .block-menu {
       @include grid-span(6, 4);
     }
-    #block-beanstalk-search {
+    .block-search {
       @include grid-span(3, 10);
     }
     #block-mobilemenubutton {
@@ -24,20 +17,4 @@ header {
     }
   }
 
-  //Desktop & tablet landscape
-  @include breakpoint($desktop) {
-
-  }
-  //Widescreen
-  @include breakpoint($desktopWide) {
-
-  }
-  //Ultra Widescreen
-  @include breakpoint($desktopUltraWide) {
-
-  }
-  //4K Display
-  @include breakpoint($desktop4k) {
-
-  }
 }

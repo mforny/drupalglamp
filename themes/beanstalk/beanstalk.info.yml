@@ -3,12 +3,15 @@ type: theme
 description: A custom theme for Digital Beanstalk based on Classy
 package: Other
 core: 8.x
-libraries:
-  - beanstalk/global-styling
-
 base theme: classy
 #Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
-
+libraries:
+  - beanstalk/global-styling
+libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/menu.css:
 regions:
   header: Header
   hero: Hero

@@ -1,0 +1,21 @@
+footer {
+  //Desktop & Tablet Landsacpe
+  @include breakpoint($desktop) {
+    .region-footer{
+      .block{
+        background: #fff;
+        padding: 5px;
+      }
+      .block:nth-child(1){
+        @include grid-span(4,1);
+      }
+      .block:nth-child(2){
+        @include grid-span(4,5);
+      }
+      .block:nth-child(3){
+        @include grid-span(4,9);
+      }
+    }
+  }
+
+}

@@ -4,4 +4,25 @@ footer{
   background: $footerColor;
   padding: $footerPadding;
   min-height: $footerHeight;
+  h2{
+    font-size: 20px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      padding: 0;
+      list-style-type: none;
+      a {
+        color: $menuTextColor;
+        &:hover {
+          color: $menuTextHoverColor;
+        }
+        &.is-active {
+          color: $menuTextActiveColor;
+        }
+      }
+    }
+  }
 }
